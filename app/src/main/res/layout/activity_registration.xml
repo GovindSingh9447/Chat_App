@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wlla"
+    tools:context=".RegistrationActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/bar_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical"
+        android:layout_marginStart="30dp"
+
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+
+        android:gravity="center|center_horizontal"
+
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_marginTop="8dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            android:text="Create Your Account"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:ems="10"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:background="@android:drawable/editbox_background"
+            android:hint="UserName"
+            android:singleLine="true"
+            android:inputType="textCapWords"
+            android:textColor="@color/black"
+            android:textColorHint="#808080" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:ems="10"
+            android:layout_marginTop="30dp"
+            android:hint="Email"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:background="@android:drawable/editbox_background"
+            android:textColor="@color/black"
+            android:textColorHint="#808080" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="30dp"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Password"
+            android:textColor="@color/black"
+            android:textColorHint="#808080" />
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:layout_marginTop="40dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
